@@ -1,0 +1,6 @@
+cd /g/WebDoc/FrontEnd
+git status
+git add .
+git commit -m "Auto"
+git status
+git push

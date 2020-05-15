@@ -115,10 +115,13 @@ Many CSS Websites - www.csszengarden.com
 		Generic Family are the last option for font is no font specified
 		worked.A generic font family should be the last item in the list.
 	9. font-size: 20px; OR 62.5%; (62.5%=10px)(0.625*16=10)(% of parent) OR 
-		2.0em; (Relative to parent font size)(default 1em=16px)
+		2.0em; (Relative to parent font size)(default 1em=16px) OR
+		2.0rem; (Relative to root font size and not parent)
 	10. font-weight: bold; OR 100; OR 300; (100,200,300,...,800)
 	11. line-height: 1.5;
 	12. text-align: center;
+	13. float: left; (element will come to left)
+	14. max-width: 700px;
 
 - CSS Selector
 	1. Element = <h1>, h1{}
@@ -129,6 +132,7 @@ Many CSS Websites - www.csszengarden.com
 	6. Descendant Selector = li a {} (Nested elements)
 	7. Adjacent Selector = h4 + ul {} (Element after other element at same level)
 	8. nth of type = li:nth-of-type(odd){} OR li:nth-of-type(3){}
+	9. Two class = <h1 class="c1 c2">, .c1.c2{}
 
 - Examples of some more Selector
 	1. input:checked{}
@@ -180,13 +184,13 @@ Many CSS Websites - www.csszengarden.com
 - Box Model (Inner to Outer)
 	1. Content
 		width: 30%; height: 50px(Width and Height)
-	2. Border
+	2. Padding
+		padding: 10px;
+		padding-left: 40px;
+	3. Border
 		border: 10px dotted blue;
 		border-right: 10px dotted blue;
 		AND (border-left, border-top, border-bottom)
-	3. Padding
-		padding: 10px;
-		padding-left: 40px;
 	4. Margin
 		margin: 100px;
 		margin-top: 500px;
