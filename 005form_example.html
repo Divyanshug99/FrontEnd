@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo Form</title>
+</head>
+<body>
+	<h1>Register</h1>
+	<form>
+		<div>
+			<label for="f">First Name:</label>
+			<input type="text" name="Fname" id="f" placeholder="John" required>
+
+			<label for="l">Last Name:</label>
+			<input type="text" name="Lname" id="l" placeholder="Smith" required>
+		</div>
+
+		<div>
+			<label for="Male">Male</label>
+			<input type="radio" name="Gender" id="Male" value="Male">
+
+			<label for="Female">Female</label>
+			<input type="radio" name="Gender" id="Female" value="Female">
+
+			<label for="Other">Other</label>
+			<input type="radio" name="Gender" id="Other" value="Other">
+		</div>
+
+		<div>
+			<label for="Email">Email:</label>
+			<input type="email" name="email" id="Email"
+			placeholder="your email" required>
+
+			<label for="Password">Password:</label>
+			<input type="password" pattern=".{5,10}" name="Password" id="Password" placeholder="your password" required title="5 to 10 characters must">
+		</div>
+
+		<div>
+			<label for="Birthday">Birthday:</label>
+			<select name="Birthday_Month" id="Birthday">
+				<option selected disabled>Month</option>
+				<option>Jan</option>
+				<option>Feb</option>
+				<option>March</option>
+			</select>
+			<select name="Birthday_Day" id="Birthday">
+				<option selected disabled>Day</option>
+				<option>11</option>
+				<option>12</option>
+				<option>13</option>
+			</select>
+			<select name="Birthday_Year" id="Birthday">
+				<option selected disabled>Year</option>
+				<option>1996</option>
+				<option>1997</option>
+				<option>1998</option>
+			</select>
+		</div>
+
+		<div>
+			<label for="checkbox">I agree to the terms and conditions</label>
+			<input type="checkbox" name="agreed" id="checkbox" value="yes">
+		</div>
+
+		<div>
+			<button>Submit</button>
+		</div>
+	</form>
+</body>
+</html>

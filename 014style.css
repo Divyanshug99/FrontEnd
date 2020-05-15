@@ -1,0 +1,30 @@
+p {
+
+/*Content - Width and Height*/
+
+width: 30%;
+/*Border*/
+
+border: 10px dotted blue;
+border-right: 10px dotted blue;
+border-left: 10px dotted red;
+border-top: 10px dotted green;
+border-bottom: 10px dotted purple;
+
+/*Padding*/
+
+padding: 10px;
+padding-left: 40px;
+
+/*Margin*/
+/*margin: 100px;*/
+/*margin-top: 500px;*/
+/*margin: 20px 40px 500px 100px;*/
+/*margin: 0 auto 0 auto;*/
+margin: 0 auto;
+margin: 50px 20px;
+}
+
+
+
+

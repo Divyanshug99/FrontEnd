@@ -1,0 +1,198 @@
+# Important Sites :
+
+Color Picker - www.colorpicker.com
+Color Names - colours.neilorangepeel.com
+Selectors Precedence - specificity.keegan.st
+30 CSS Selectors - code.tutsplus.com/tutorials/the-30-css-selectors-you-must-memorize--net-16048
+Fonts - www.cssfontstack.com
+Google fonts - https://fonts.google.com
+Many CSS Websites - www.csszengarden.com
+
+
+# HTML Notes:
+
+- General
+	1. <!-- Comment -->
+	2. echo .>new.html
+	3. "html" + Tab
+	4. "lorem" + Tab
+	5. Ctrl + Shift + D = Duplicate(used except Copy Paste)
+	6. <strong> rather than <b>, <em> rather than <i>
+
+- Block level Element (B)
+	1. Has there own line or block i.e. starts with new line
+	2. Ex- <h1>, <h2>, <p>
+
+- Inline Element (I)
+	1. Does not has there own line or block i.e. starts in continuation
+	2. Ex- <b>, <i>, <strong>, <em>
+
+- Lists
+	1. Ordered List- <ol>, <li>
+	2. Unordered List- <ul>, <li>
+
+- Generic container
+	1. Grouping contents
+	2. Ex- <div>(B), <span>(I)
+
+- Images
+	1. <img src=""> (I)
+	2. <img src="https://google.com/image.jpg">
+	3. <img src="image.jpg">
+	4. Attr.- alt, width
+
+- Links
+	1. <a href=""> </a> (I)
+	2. <a href="page.html">page</a>
+	3. <a href="https://www.Google.com">google</a> (https is must)
+
+- Tables
+	1. <table border="1">
+	2. <table>, <tr>, <td>
+	3. <table>, <tr>, <th>, <td>
+	4. <table>, <thead>, <tr>, <th>, <tbody>, <tr>, <td>
+
+- Forms
+	1. Action - URL where the form send data (default- same page)
+	2. Method - type of HTTP method (get/post) (default- get)
+	3. get = get/retrieve data, post = send/post data to server/database
+	4. <form action="" method=""> </form> (B)
+	5. <form action="https://www.google.com" method="get">
+		(directed URL after submit - https://www.google.com/?name=dg&pass=123)
+	6. <input type=""> (I)
+		(text/button/email/password/radio/reset/submit/date/color/file/checkbox)
+	7. input Attr.- type, placeholder, name(name to the sent data), id, required,
+		value(value sent for input)
+	8. <input type="submit"> OR <button>Submit</button>
+	9. <label> <input > </label>
+	10. <label> name: <input type="text"> </label> OR
+		<label for="name"> name: </label>
+		<input id="name" type="text">
+	11. <input type="email" required>
+	12. Radio - Attr. name should be same in radio button and value is also must
+		because without value it will only show 'on' which will not differ
+		which radio button is selected
+		<input type="radio" name="ques" value="1">
+		<input type="radio" name="ques" value="2">
+	13. Dropdown - <select> (name is must), <option>
+	14. <option selected disabled> Month </option>
+	15. Textarea - <textarea> (name is must), Attr.- rows, cols
+	16. Checkbox - <input type="checkbox" name="abc"> (name is must)
+		<input type="checkbox" name="abc" checked>
+	17. <input type="password" pattern=".{5,10}" name="Password" required 
+		title="5 to 10 characters must">
+
+- Default Fonts
+	1. Body - 16px
+	2. H1 - 2em
+	3. H2 - 1.5em
+	4. H3 - 1.17em
+	5. H4 - 1em
+	6. H5 - 0.83em
+	7. H6 - 0.67em
+
+
+# CSS Notes:
+
+- General
+	1. Inline = <h1 style="color:pink;"> H </h1> (Highest Priority)
+	2. Internal = <style type="text/css"> li{color: cyan;} </style> (In head tag)
+	3. External = <link rel="stylesheet" type="text/css" href="my.css">
+		(In head tag) (Least Priority)
+	4. Hexadecimal(#FF00A2), RGB(rgb(0,255,20)), RGBA(rgb(0,255,20,0.5))
+
+- CSS Property
+	1. color
+	2. background, background:url(http://google.com/images.jpg);
+	3. background-repeat: no-repeat;
+	4. background-size: cover;
+	5. border: solid 3px purple;
+	6. text-decoration: line-through;
+	7. text-transform: uppercase;
+	8. font-family: Arial;
+		Syntax: font-family: <family-name><generic-family>;
+		where <generic-family> = (serif/sans-serif/cursive/fantasy/monospace).
+		Generic Family are the last option for font is no font specified
+		worked.A generic font family should be the last item in the list.
+	9. font-size: 20px; OR 62.5%; (62.5%=10px)(0.625*16=10)(% of parent) OR 
+		2.0em; (Relative to parent font size)(default 1em=16px)
+	10. font-weight: bold; OR 100; OR 300; (100,200,300,...,800)
+	11. line-height: 1.5;
+	12. text-align: center;
+
+- CSS Selector
+	1. Element = <h1>, h1{}
+	2. ID = <h1 id="abc">, #abc{}
+	3. Class = <h1 class="abc">, .abc{}
+	4. Attribute Selector = input[type="text"]{} OR a[href="www.google.com"]{}
+	5. Star = *{} (All on web page)
+	6. Descendant Selector = li a {} (Nested elements)
+	7. Adjacent Selector = h4 + ul {} (Element after other element at same level)
+	8. nth of type = li:nth-of-type(odd){} OR li:nth-of-type(3){}
+
+- Examples of some more Selector
+	1. input:checked{}
+	2. #special:first-letter{} (first letter of the element with id 'special')
+	3. h1:hover{} (<h1> element when hovered over)
+	4. a:visited{} (<a> element that have been visited)
+
+- Precedence of Selectors (Low to High)
+	1.Universal Selectors (Lowest)
+		*{}
+	2. Type Selectors
+		li{}
+		li a{}
+		li+a{}
+	3. Class,Attribute and Pseudo-Class Selectors
+		.hello{}
+		input[type="text"]{}
+		a:hover
+		input:checked
+	4. ID Selectors (Highest)
+		#special{}
+	5. Examples:
+		A) *               /* a=0 b=0 c=0 -> specificity =   0 */
+		B) LI              /* a=0 b=0 c=1 -> specificity =   1 */
+		C) UL LI           /* a=0 b=0 c=2 -> specificity =   2 */
+		D) UL OL+LI        /* a=0 b=0 c=3 -> specificity =   3 */
+		E) H1 + *[REL=up]  /* a=0 b=1 c=1 -> specificity =  11 */
+		F) UL OL LI.red    /* a=0 b=1 c=3 -> specificity =  13 */
+		G) LI.red.level    /* a=0 b=2 c=1 -> specificity =  21 */
+		H) #x34y           /* a=1 b=0 c=0 -> specificity = 100 */
+
+- Google Fonts
+	1. <link href="https://fonts.googleapis.com/css?family=Faster+One|
+		Berkshire+Swash|Chicle|Fascinate+Inline|Fontdiner+Swanky|
+		Gloria+Hallelujah|Indie+Flower|Libre+Barcode+128+Text|Lobster|
+		Pacifico" rel="stylesheet"> (In head tag)
+	2. font-family: 
+		'Chicle', cursive;
+		'Indie Flower', cursive;
+		'Lobster', cursive;
+		'Libre Barcode 128 Text', cursive; 
+		'Pacifico', cursive;
+		'Fascinate Inline', cursive;
+		'Gloria Hallelujah', cursive;
+		'Faster One', cursive;
+		'Berkshire Swash', cursive;
+		'Fontdiner Swanky', cursive;
+
+- Box Model (Inner to Outer)
+	1. Content
+		width: 30%; height: 50px(Width and Height)
+	2. Border
+		border: 10px dotted blue;
+		border-right: 10px dotted blue;
+		AND (border-left, border-top, border-bottom)
+	3. Padding
+		padding: 10px;
+		padding-left: 40px;
+	4. Margin
+		margin: 100px;
+		margin-top: 500px;
+		margin: 20px 40px 500px 100px; (top right bottom left)
+		margin: 0 auto 0 auto; (auto = center element)
+		margin: 0 auto; (top & bottom = 0)(left & right = auto)
+		margin: 50px 20px; (top & bottom = 50px)(left & right = 20px)
+
+- 
