@@ -199,4 +199,34 @@ Many CSS Websites - www.csszengarden.com
 		margin: 0 auto; (top & bottom = 0)(left & right = auto)
 		margin: 50px 20px; (top & bottom = 50px)(left & right = 20px)
 
-- 
+
+# Bootstrap_3:
+
+- General
+	1. Add bootstrap.css OR bootstrap.min.css to folder
+	2. Or we can add external file hosted on internet i.e. 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	3. Add bootstrap.js OR bootstrap.min.js to folder
+	4. Or we can add external file hosted on internet i.e. 
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	5. Also must add jquery CDN above javascript i.e. 
+		<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
+- Attributes
+	1. active
+	2. disabled
+
+- Classes
+	1. btn btn-success btn-lg
+	2. container
+	3. jumbotron
+	4. form-control
+	5. form-group
+	6. form-inline
+
+- NavBar
+	1. <nav></nav>
+	2. <nav class="navbar navbar-default"></nav>
+	3. class="collapse navbar-collapse"
+	4. data-target Attr. for collapsing in hamburger button
+	
