@@ -230,3 +230,7 @@ Many CSS Websites - www.csszengarden.com
 	3. class="collapse navbar-collapse"
 	4. data-target Attr. for collapsing in hamburger button
 	
+- Grid System
+	1. Bootstrap Container can be divided into 12 columns
+	2. It should be in container class
+	3. container = row = 12 columns (col-lg-12)
